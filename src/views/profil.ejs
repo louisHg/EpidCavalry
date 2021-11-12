@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="/css/login.css">
+    </head>
+    <body>
+        <%- include('header.ejs') %>
+        
+        <div>
+            <form action="/UPDATE_PROFIL" method="POST" class="bording_tableau">
+                    <label>Name</label>
+                    <input type="text" placeholder="Enter a name" name="name" required value="">
+                    <label>Surname</label>
+                    <input type="text" placeholder="Enter a surname" name="surname" required value="">
+                    <label>Graduate</label>
+                    <input type="text" placeholder="Enter your graduate" name="graduate" required value="">
+                    <label>Experience Level</label>
+                    <input type="number" placeholder="Enter your experience level" name="experience_lvl" required value="">
+                    <label>Preffered langage</label>
+                    <input type="text" placeholder="Enter your preffered langage" name="preffered_langage" required value="">
+                    <label>Language_spoken</label>
+                    <input type="text" placeholder="Language spoken" name="language_spoken" required value="">
+                    <label>Skills</label>
+                    <input type="text" placeholder="skills" name="skills" required value="">
+                    <label>Hobbies</label>
+                    <input type="text" placeholder="Hobbies" name="hobbies" required value="">
+                    <label>Educational_path</label>
+                    <input type="text" placeholder="Educational_path" name="educational_path" required value="">
+                    <label>Professional_career</label>
+                    <input type="text" placeholder="Professional_career" name="professional_career" required value="">
+                    <button type="submit">Submit</button>
+            </form>
+        </div>
+        
+        <%- include('footer.ejs') %>
+    </body>
+</html>
